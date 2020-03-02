@@ -1,0 +1,10 @@
+@import "mixins";
+
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Light/Ubuntu-Light", 300, normal);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Regular/Ubuntu-Regular", 400, normal);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Medium/Ubuntu-Medium", 500, normal);
+@include font-face("Ubuntu", "/assets/fonts/Ubuntu-Bold/Ubuntu-Bold", 700, normal);
+
+@include font-face("Ubuntu Condensed", "/assets/fonts/Ubuntu-Condensed/UbuntuCondensed-Regular", 400, normal);
+
+@include font-face("Marianna", "/assets/fonts/Marianna/mariannaallfontru", 400, normal);
