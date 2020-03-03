@@ -1,4 +1,14 @@
-// Main js file
-// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+import owlCarouse from 'owl.carousel';
 
-console.log("its work");
+$('.slider-block').owlCarousel({
+  items: 4,
+  loop: true,
+  dots: false,
+  nav: true,
+});
+
+$('.menu-toggle').on('click', function(e){
+  e.preventDefault();
+
+  $('.dropdown-menu').toggleClass('dropdown-menu--visible');
+});

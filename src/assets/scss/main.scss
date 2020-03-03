@@ -59,7 +59,7 @@ li {
 section,
 .section {
   position: relative;
-  //padding: 40px 0;
+
   @media screen and (max-width: $smDesktopWidth) {
     padding: 36px 0;
   }
@@ -125,11 +125,20 @@ section,
   text-transform: uppercase;
 }
 
+.slider__text,
+.contacts-section__title,
+.form-section__title,
+.menu__link {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 38px;
+  line-height: 86%;
+  color: #FFFFFF;
+}
+
 .main-block {
   max-width: 100%;
   width: 100%;
   min-height: 100vh;
-  //padding: 4.5vh 70px 16vh 70px;
   padding: 0 4.9% 16vh 4.9%;
   background-image: url(../img/main_img/bg_main.jpg);
   background-repeat: no-repeat;
@@ -164,7 +173,7 @@ section,
 
         .header-nav__link {
           font-size: 12px;
-          line-height: 164%;   //identical to box height, or 20px
+          line-height: 164%;
           text-transform: uppercase;
           color: #FFFFFF;
           border-bottom: 1px solid #FFFFFF;
@@ -175,7 +184,7 @@ section,
   }
 
   &-logo {
-    margin-right: 12.3%;   //160px
+    margin-right: 12.3%;
   }
 }
 
@@ -200,7 +209,7 @@ section,
     font-style: normal;
     font-weight: normal;
     font-size: 80px;
-    line-height: 77%;   // or 62px
+    line-height: 77%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-shadow: 0 0 10px rgba(17, 18, 19, 0.2);
@@ -210,8 +219,8 @@ section,
 .advantage {
   display: flex;
   justify-content: space-between;;
-  padding-left: 0.8%;    //10px
-  padding-right: 1.5%;   //20px
+  padding-left: 0.8%;
+  padding-right: 1.5%;
 
   &__item {
 
@@ -226,7 +235,7 @@ section,
 
       .advantage__title {
         font-size: 12px;
-        line-height: 164%;   //identical to box height, or 20px
+        line-height: 164%;
         color: #DBC493;
         position: relative;
 
@@ -247,7 +256,7 @@ section,
 
       .advantage__text {
         font-size: 24px;
-        line-height: 112.5%;    //or 27px
+        line-height: 112.5%;
         color: #FFFFFF;
         text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
 
@@ -261,7 +270,7 @@ section,
 
 .about-company-block {
   padding-top: 95px;
-  padding-right: 4.9%;   //70px от 1440
+  padding-right: 4.9%;
 
   .company__top-line {
     display: flex;
@@ -269,25 +278,25 @@ section,
   }
 
   .about-company__title {
-    padding-left: 11.3%;   //155px от 1440-70px
+    padding-left: 11.3%;
     font-size: 38px;
-    line-height: 109%;   //or 41px
+    line-height: 109%;
     color: #222222;
   }
 
   .company__description {
-    padding: 55px 0 105px 13.1%;    //180px от 1440-70
+    padding: 55px 0 105px 13.1%;
     display: flex;
 
     .company-description__column {
 
       &:first-child {
-        margin-right: 11%;       //130px от 1440-70-180
+        margin-right: 11%;
       }
 
       .company-description__text {
         font-size: 16px;
-        line-height: 159%;     // or 25px
+        line-height: 159%;
         color: #222222;
         margin-bottom: 40px;
       }
@@ -303,73 +312,137 @@ section,
 
 .slider-block {
   width: 100%;
-  height: 700px;
-  display: flex;
+  overflow: hidden;
 
-  &__item {
-    width: 25%;
-    height: 100%;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding-top: 110px;   //7.6% от 1440
-    padding-left: 2.8%;  //40px от  1440
+  &__item-container{
+    width: 100%;
 
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      //background-color: rgba(189, 189, 189, .1);
-      background-color: rgba(0, 0, 0, .5);
-    }
-
-    .slider__item-cont {
+    .slider-block__item-wrapper {
+      padding-top: 195%;
       position: relative;
-      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
 
-      .slider__top-line {
-        display: flex;
-        padding-bottom: 40px;
+      .slider-block__item {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        padding-top: 110px;
+        padding-left: 40px;
 
-        .slider__number {
-          color: #DBC493;
-          margin-right: 28px;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: rgba(0, 0, 0, .5);
         }
 
-        .slider__link {
-          color: #DBC493;
+        .slider__item-container {
           position: relative;
+          z-index: 2;
 
-          &:before {
-            content: '';
-            position: absolute;
-            left: -15px;
-            top:-3px;
-            width: 1px;
-            height:32px;
-            background:#DBC493;
-            transform:rotate(15deg);
+          .slider__top-line {
+            display: flex;
+            padding-bottom: 40px;
+
+            .slider__number {
+              color: #DBC493;
+              margin-right: 28px;
+            }
+
+            .slider__link {
+              color: #DBC493;
+              position: relative;
+
+              &:before {
+                content: '';
+                position: absolute;
+                left: -15px;
+                top:-3px;
+                width: 1px;
+                height:32px;
+                background:#DBC493;
+                transform:rotate(15deg);
+              }
+            }
           }
-        }
-      }
 
-      .slider__benefits {
+          .slider__benefits {
 
-        .slider__text {
-          text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
+            .slider__text {
+              text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
+              margin-bottom: 5px;
+            }
+          }
         }
       }
     }
   }
 }
 
+.owl{
+  &-stage{
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.owl-nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 31.5% 10px 0;
+}
+
+.owl-nav button {
+  width: 20px;
+  height: 5px;
+  background-image: url(/assets/img/main_img/arrow_left.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.owl-nav button:last-child {
+  background-image: url(/assets/img/main_img/arrow_right.svg);
+}
+
+.owl-nav.disabled {
+  display: block;
+  cursor: auto;
+}
+
+.disabled {
+  display: none;
+}
+
+.owl-nav button span {
+  display: none;
+}
+
 .news-block {
-  padding: 105px 4.9% 180px 10.8%;   //70px от 1440  155px от 1440
+  padding: 105px 4.9% 180px 10.8%;
 
   &__top-line {
     display: flex;
@@ -378,19 +451,19 @@ section,
 
     .news-block__title {
       font-size: 24px;
-      line-height: 86%;   //or 20px
-      color: #828282;     //Gray 3
+      line-height: 86%;
+      color: #828282;
     }
   }
 
   .news {
     display: flex;
-    padding-left: 2.1%;   //25px  от 1440-70-155
+    padding-left: 2.1%;
 
     .news__column {
 
       &:first-child {
-        margin-right: 15.1%;    //180 от  1440-70-155-25
+        margin-right: 15.1%;
       }
 
       .news__item {
@@ -403,8 +476,8 @@ section,
 
         .news__anons {
           font-size: 16px;
-          line-height: 159%;    //or 25px
-          color: #333333;       //Gray 1
+          line-height: 159%;
+          color: #333333;
           margin-bottom: 20px;
         }
 
@@ -434,21 +507,12 @@ section,
   background: #16345F;
 }
 
-.slider__text,
-.contacts-section__title,
-.form-section__title {
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 38px;
-  line-height: 86%;   //identical to box height, or 33px
-  color: #FFFFFF;
-}
-
 .contacts-section {
   position: absolute;
-  width: 44.5%;     //641px
-  height: 92.4%;    //647px
-  left: 5.6%;     //80px
-  top: -15%;    //105px
+  width: 44.5%;
+  height: 92.4%;
+  left: 5.6%;
+  top: -15%;
   background-image: url(../img/main_img/bg_cont.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -456,28 +520,28 @@ section,
   background-position: center;
 
   &__title {
-    padding: 195px 0 35px 12.5%;  //80px от 641
+    padding: 195px 0 35px 12.5%;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    padding-left: 16.4%;  //105px от 641
+    padding-left: 16.4%;
     padding-bottom: 20px;
 
 
     .contacts-section__icon {
-      margin-right: 5.6%;  //30px от 641-105px=456
+      margin-right: 5.6%;
     }
 
     .contacts-section__tel {
       font-size: 16px;
-      line-height: 159%;   //or 25px
+      line-height: 159%;
       color: #FFFFFF;
     }
 
     .contacts-section__mail {
-      font-size: 12px;  //identical to box height, or 20px
+      font-size: 12px;
       text-transform: uppercase;
       color: #FFFFFF;
       text-decoration-line: underline;
@@ -487,41 +551,39 @@ section,
 
 .form-section {
   position: absolute;
-  width: 39.9%;     //575px
-  height: 93.6%;   //655px
-  left: 47.2%;     //680px
-  top: 15.7%;      //110px
+  width: 39.9%;
+  height: 93.6%;
+  left: 47.2%;
+  top: 15.7%;
   border: 1px solid #DBC493;
-  //padding: 60px 13.04% 0 13.91%;  75px от 575   80px от 575
 
   &__title {
-      //padding-bottom: 65px;
-    padding: 60px 0 65px 14%;   //80px от 575
+    padding: 60px 0 65px 14%;
   }
 
   .form {
-    padding: 0 13% 0 14%;    //75px от 575   80px от 575
+    padding: 0 13% 0 14%;
 
     &__elem {
-      padding-left: 4.8%;   //20px от 575-80px-75px=420px
+      padding-left: 4.8%;
       padding-bottom: 10px;
       border-bottom: 1px solid #DBC493;
       margin-bottom: 30px;
 
       .form__input {
         font-size: 16px;
-        line-height: 159%;  // or 25px
-        color: #BDBDBD;   //Gray 4
+        line-height: 159%;
+        color: #BDBDBD;
         background-color: transparent;
       }
 
       .form__icon {
-        margin-right: 5.5%;   //22px от 420-20px
+        margin-right: 5.5%;
       }
     }
 
     .btn-submit {
-      padding: 0 9.5%;   //40px от 575-80-75=420px
+      padding: 0 9.5%;
       height: 40px;
       background: linear-gradient(94.99deg, #B19973 0.11%, #F0E4AD 51.41%);
       color: #222222;
@@ -535,10 +597,6 @@ section,
   display: flex;
   justify-content: space-between;
   padding: 175px 4.9% 150px;
-
-  &-logo {
-
-  }
 
   &__inf {
     display: flex;
@@ -595,10 +653,9 @@ section,
       .footer-insurance__link {
         margin-right: 25px;
         font-size: 16px;
-        line-height: 160%;    //identical to box height, or 26px
-        color: #16345F;       //Blue-Dark
+        line-height: 160%;
+        color: #16345F;
         border-bottom: 1px solid #16345F;
-        //padding-bottom: 1px;
 
         &:last-child {
           margin-right: 0;
@@ -608,7 +665,116 @@ section,
   }
 }
 
+.dropdown-menu {
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5.1vh 5.5% 22vh;
+  background-color: #16345F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity .5s ease, transform 0s ease .5s;
 
+  &__top-line {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    .dropdown-menu__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .menu__item {
+        margin-bottom: 16px;
+
+        .menu__link {
+          color: #BDBDBD;
+        }
+      }
+
+      .menu__item_insurance {
+
+        .insurance-types__menu {
+          padding: 25px 0 9px 105px;
+
+          .insurance-types__item {
+            position: relative;
+            margin-bottom: 10px;
+
+            &:before {
+             position: absolute;
+              content: "";
+              top: 50%;
+              left: -90px;
+              width: 60px;
+              height: 2px;
+              background-color: #BDBDBD;
+              //display: none;
+            }
+
+            .insurance-types__link {
+              font-size: 24px;
+              line-height: 160%;
+              text-transform: uppercase;
+              color: #BDBDBD;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-menu__contacts-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .dropdown-menu__contacts {
+      width: 17%;
+
+      .contacts-section__item_menu {
+        padding-left: 0;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .dropdown-menu__soc-network {
+
+      .menu__soc-network {
+
+        .soc-network__elem {
+          margin-right: 15px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu--visible {
+  transform: translateX(0);
+  opacity: 1;
+  transition: opacity .5s ease;
+}
 
 
 
