@@ -1,6 +1,19 @@
 import owlCarouse from 'owl.carousel';
+import inputMask from 'inputmask';
 
-$('.slider-block').owlCarousel({
+
+//  Counter sliderMain
+const updateSliderCountMain = ({item, relatedTarget}) => {
+  const indexInLoop = (relatedTarget._clones.length / 2);
+  let realIndex = item.index - indexInLoop;
+  if(realIndex >= item.count){
+    realIndex = realIndex - item.count;
+  }
+  const text = `${realIndex  + 1} / ${item.count}`;
+  $('.slider-main__counter').text(text);
+};
+
+$('#sliderMain').owlCarousel({
   items: 4,
   loop: true,
   dots: false,
@@ -15,8 +28,70 @@ $('.slider-block').owlCarousel({
     1025:{
       items:4
     }
+  },
+
+  onInitialized: updateSliderCountMain,
+  onTranslated: updateSliderCountMain
+});
+
+
+$('#sliderAdvantage').owlCarousel({
+  responsive: {
+    0: {
+      items: 1,
+      loop: true,
+      dots: true,
+      dotData: true,
+      dotsContainer: '.advantage-dots',
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 700,
+    },
+    1024: {
+      items: 5,
+      dots: false,
+      mouseDrag: false,
+      touchDrag: false,
+      pullDrag: false,
+    }
   }
 });
+
+
+// Counter sliderNews
+const updateSliderCountNews = ({item, relatedTarget}) => {
+  const indexInLoop = (relatedTarget._clones.length / 2);
+  let realIndex = item.index - indexInLoop;
+  if(realIndex >= item.count){
+    realIndex = realIndex - item.count;
+  }
+  const text = `${realIndex  + 1} / ${item.count}`;
+  $('.slider-news__counter').text(text);
+};
+
+$('#sliderNews').owlCarousel({
+  responsive: {
+    320: {
+      items: 1,
+      loop: true,
+      dots: false,
+      nav: true,
+      margin: 48,
+    },
+    1024: {
+      items: 4,
+      dots: false,
+      mouseDrag: false,
+      touchDrag: false,
+      pullDrag: false,
+    }
+  },
+
+  onInitialized: updateSliderCountNews,
+  onTranslated: updateSliderCountNews
+});
+
 
 $('.menu-toggle').on('click', function(e){
   e.preventDefault();
@@ -30,6 +105,7 @@ $('.form-toggle').on('click', function(e){
 
   $('.callback-form').toggleClass('callback-form_visible');
 });
+
 
 //menu height
 $('.dropdown-list').slideUp(0);
@@ -50,5 +126,12 @@ $('.menu-toggle').on('click', function(){
 // });
 
 
+//  inputMask
+const phoneSelectors = document.querySelectorAll('.phone__mask');
+const im = new Inputmask("+7 (999) 999-99-99");
+
+phoneSelectors.forEach(phone => {
+  im.mask(phone);
+});
 
 

@@ -37,8 +37,9 @@
              <P class="invitation__text">клиентов!</P>
            </div>
 
-           <div class="advantage">
-             <div class="advantage__item">
+           <div class="advantage slider-advantage" id="sliderAdvantage">
+             <div class="advantage__item-wrapper">
+             <div class="advantage__item" data-dot="1">
                <div class="advantage__top-line">
                  <div class="advantage__icon">
                    <img src="assets/img/main_img/icon1.svg" alt="Icon">
@@ -52,7 +53,9 @@
                  <p class="advantage__text">в страховании</p>
                </div>
              </div>
-             <div class="advantage__item">
+             </div>
+             <div class="advantage__item-wrapper">
+             <div class="advantage__item" data-dot="2">
                <div class="advantage__top-line">
                  <div class="advantage__icon">
                    <img src="assets/img/main_img/icon2.svg" alt="Icon">
@@ -66,7 +69,9 @@
                  <P class="advantage__text">на особых условиях</P>
                </div>
              </div>
-             <div class="advantage__item">
+             </div>
+             <div class="advantage__item-wrapper">
+             <div class="advantage__item" data-dot="3">
                <div class="advantage__top-line">
                  <div class="advantage__icon">
                    <img src="assets/img/main_img/icon3.svg" alt="Icon">
@@ -80,7 +85,9 @@
                  <p class="advantage__text">и Вашей семьи</p>
                </div>
              </div>
-             <div class="advantage__item">
+             </div>
+             <div class="advantage__item-wrapper">
+             <div class="advantage__item" data-dot="4">
                <div class="advantage__top-line">
                  <div class="advantage__icon">
                    <img src="assets/img/main_img/icon4.svg" alt="Icon">
@@ -94,7 +101,9 @@
                  <p class="advantage__text">и просто</p>
                </div>
              </div>
-             <div class="advantage__item">
+             </div>
+             <div class="advantage__item-wrapper">
+             <div class="advantage__item" data-dot="5">
                <div class="advantage__top-line">
                  <div class="advantage__icon">
                    <img src="assets/img/main_img/icon5.svg" alt="Icon">
@@ -108,6 +117,14 @@
                  <p class="advantage__text">365 дней в году</p>
                </div>
              </div>
+           </div>
+           </div>
+           <div class="advantage-dots">
+             <button type="button" role="button" class="advantage-dots__item">1</button>
+             <button type="button" role="button" class="advantage-dots__item">2</button>
+             <button type="button" role="button" class="advantage-dots__item">3</button>
+             <button type="button" role="button" class="advantage-dots__item">4</button>
+             <button type="button" role="button" class="advantage-dots__item">5</button>
            </div>
        </section>
 
@@ -145,117 +162,115 @@
          </div>
          <p class="insurance-types">Виды страхования</p>
        </section>
-       <section class="slider-block">
-         <div class="slider-block__item-container">
-           <div class="slider-block__item-wrapper">
-             <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider1.jpg);">
-               <div class="slider__item-container">
-                 <div class="slider__top-line">
-                   <p class="slider__number">01</p>
-                   <a href="#" class="slider__link">автомобили</a>
+       <section class="slider-main__wrapper-block">
+         <div class="slider-main__counter"></div>
+         <div class="slider-block" id="sliderMain">
+           <div class="slider-block__item-container">
+             <div class="slider-block__item-wrapper">
+               <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider1.jpg);">
+                 <div class="slider__item-container">
+                   <div class="slider__top-line">
+                     <p class="slider__number">01</p>
+                     <a href="#" class="slider__link">автомобили</a>
+                   </div>
+                   <div class="slider__benefits">
+                     <p class="slider__text">Уверенность</p>
+                     <p class="slider__text">за рулем</p>
+                   </div>
                  </div>
-                 <div class="slider__benefits">
-                   <p class="slider__text">Уверенность</p>
-                   <p class="slider__text">за рулем</p>
-                 </div>
-                 <p class="slider__counter slider__counter_white">1/6</p>
                </div>
              </div>
            </div>
-         </div>
 
-         <div class="slider-block__item-container">
-           <div class="slider-block__item-wrapper">
-             <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider2.jpg);">
-               <div class="slider__item-container">
-                 <div class="slider__top-line">
-                   <p class="slider__number">02</p>
-                   <a href="#" class="slider__link">недвижимость</a>
+           <div class="slider-block__item-container">
+             <div class="slider-block__item-wrapper">
+               <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider2.jpg);">
+                 <div class="slider__item-container">
+                   <div class="slider__top-line">
+                     <p class="slider__number">02</p>
+                     <a href="#" class="slider__link">недвижимость</a>
+                   </div>
+                   <div class="slider__benefits">
+                     <p class="slider__text">Ваш дом -</p>
+                     <p class="slider__text">ваша крепость</p>
+                   </div>
                  </div>
-                 <div class="slider__benefits">
-                   <p class="slider__text">Ваш дом -</p>
-                   <p class="slider__text">ваша крепость</p>
-                 </div>
-                 <p class="slider__counter slider__counter_white">2/6</p>
                </div>
              </div>
            </div>
-         </div>
 
-         <div class="slider-block__item-container">
-           <div class="slider-block__item-wrapper">
-             <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider3.jpg);">
-               <div class="slider__item-container">
-                 <div class="slider__top-line">
-                   <p class="slider__number">03</p>
-                   <a href="#" class="slider__link">здоровье</a>
+           <div class="slider-block__item-container">
+             <div class="slider-block__item-wrapper">
+               <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider3.jpg);">
+                 <div class="slider__item-container">
+                   <div class="slider__top-line">
+                     <p class="slider__number">03</p>
+                     <a href="#" class="slider__link">здоровье</a>
+                   </div>
+                   <div class="slider__benefits">
+                     <p class="slider__text">Бережем все</p>
+                     <p class="slider__text">самое ценное</p>
+                   </div>
                  </div>
-                 <div class="slider__benefits">
-                   <p class="slider__text">Бережем все</p>
-                   <p class="slider__text">самое ценное</p>
-                 </div>
-                 <p class="slider__counter slider__counter_white">3/6</p>
                </div>
-             </div>
-          </div>
-         </div>
+            </div>
+           </div>
 
-         <div class="slider-block__item-container">
-           <div class="slider-block__item-wrapper">
-             <div class="slider-block__item" style="background-image:url(assets/img/main_img/slider4.jpg);">
-               <div class="slider__item-container">
-                 <div class="slider__top-line">
-                   <p class="slider__number">04</p>
-                   <a href="#" class="slider__link">путешествия</a>
+           <div class="slider-block__item-container">
+             <div class="slider-block__item-wrapper">
+               <div class="slider-block__item" style="background-image:url(assets/img/main_img/slider4.jpg);">
+                 <div class="slider__item-container">
+                   <div class="slider__top-line">
+                     <p class="slider__number">04</p>
+                     <a href="#" class="slider__link">путешествия</a>
+                   </div>
+                   <div class="slider__benefits">
+                     <p class="slider__text">Всегда</p>
+                     <p class="slider__text">попутный</p>
+                     <p class="slider__text">ветер</p>
+                   </div>
                  </div>
-                 <div class="slider__benefits">
-                   <p class="slider__text">Всегда</p>
-                   <p class="slider__text">попутный</p>
-                   <p class="slider__text">ветер</p>
-                 </div>
-                 <p class="slider__counter slider__counter_white">4/6</p>
                </div>
              </div>
            </div>
-         </div>
 
-         <div class="slider-block__item-container">
-           <div class="slider-block__item-wrapper">
-             <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider5.jpg);">
-               <div class="slider__item-container">
-                 <div class="slider__top-line">
-                   <p class="slider__number">05</p>
-                   <a href="#" class="slider__link">предметы  роскоши</a>
+           <div class="slider-block__item-container">
+             <div class="slider-block__item-wrapper">
+               <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider5.jpg);">
+                 <div class="slider__item-container">
+                   <div class="slider__top-line">
+                     <p class="slider__number">05</p>
+                     <a href="#" class="slider__link">предметы  роскоши</a>
+                   </div>
+                   <div class="slider__benefits">
+                     <p class="slider__text">Сохраняем</p>
+                     <p class="slider__text">лучшее</p>
+                   </div>
                  </div>
-                 <div class="slider__benefits">
-                   <p class="slider__text">Сохраняем</p>
-                   <p class="slider__text">лучшее</p>
-                 </div>
-                 <p class="slider__counter slider__counter_white">5/6</p>
                </div>
              </div>
            </div>
-         </div>
 
-         <div class="slider-block__item-container">
-           <div class="slider-block__item-wrapper">
-             <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider6.jpg);">
-               <div class="slider__item-container">
-                 <div class="slider__top-line">
-                   <p class="slider__number">06</p>
-                   <a href="#" class="slider__link">инвестиции</a>
+           <div class="slider-block__item-container">
+             <div class="slider-block__item-wrapper">
+               <div class="slider-block__item " style="background-image:url(assets/img/main_img/slider6.jpg);">
+                 <div class="slider__item-container">
+                   <div class="slider__top-line">
+                     <p class="slider__number">06</p>
+                     <a href="#" class="slider__link">инвестиции</a>
+                   </div>
+                   <div class="slider__benefits">
+                     <p class="slider__text">Заботимся о</p>
+                     <p class="slider__text">благосостоянии</p>
+                   </div>
                  </div>
-                 <div class="slider__benefits">
-                   <p class="slider__text">Заботимся о</p>
-                   <p class="slider__text">благосостоянии</p>
-                 </div>
-                 <p class="slider__counter slider__counter_white">6/6</p>
                </div>
              </div>
            </div>
          </div>
        </section>
        <section class="news-block">
+         <div class="slider-news__counter"></div>
          <div class="news-block__top-line">
            <h3 class="news-block__title">пресс-служба вск</h3>
            <div class="menu-right menu-toggle">
@@ -265,8 +280,7 @@
              </div>
            </div>
          </div>
-         <div class="news">
-           <div class="news__column">
+         <div class="news slider-news" id="sliderNews">
              <div class="news__item">
                <div class="news__date">
                  26 сентебря 2019
@@ -278,7 +292,6 @@
                  <a href="#" class="more-details__link">Подробнее</a>
                  <div class="more-details__line"></div>
                </div>
-               <p class="slider__counter">1/4</p>
              </div>
              <div class="news__item">
                <div class="news__date">
@@ -291,22 +304,6 @@
                  <a href="#" class="more-details__link">Подробнее</a>
                  <div class="more-details__line"></div>
                </div>
-               <p class="slider__counter">2/4</p>
-             </div>
-           </div>
-           <div class="news__column">
-             <div class="news__item">
-               <div class="news__date">
-                 20 сентебря 2019
-               </div>
-               <div class="news__anons">
-                 ВСК обеспечила страховой защитой более 2 тысяч человек...
-               </div>
-               <div class="more-details">
-                 <a href="#" class="more-details__link">Подробнее</a>
-                 <div class="more-details__line"></div>
-               </div>
-               <p class="slider__counter">3/4</p>
              </div>
              <div class="news__item">
                <div class="news__date">
@@ -319,9 +316,19 @@
                  <a href="#" class="more-details__link">Подробнее</a>
                  <div class="more-details__line"></div>
                </div>
-               <p class="slider__counter">4/4</p>
              </div>
-           </div>
+             <div class="news__item">
+               <div class="news__date">
+                 20 сентебря 2019
+               </div>
+               <div class="news__anons">
+                 ВСК обеспечила страховой защитой более 2 тысяч человек...
+               </div>
+               <div class="more-details">
+                 <a href="#" class="more-details__link">Подробнее</a>
+                 <div class="more-details__line"></div>
+               </div>
+             </div>
          </div>
        </section>
        <section class="contacts-block">
@@ -343,26 +350,26 @@
                <input type="text" name="name" placeholder="ФИО" id="name" class="form__input">
              </div>
              <div class="form__elem">
-               <input type="text" name="question" placeholder="Вопрос" id="question" class="form__input">
+               <input type="text" name="question" placeholder="Вопрос" class="form__input">
              </div>
              <div class="form__elem">
                <img src="assets/img/main_img/phone_cont.svg" class="form__icon" alt="Phone">
-               <input type="text" name="tel" placeholder="+7 ( - - - ) - - - - - - -" id="tel" class="form__input">
+               <input type="text" name="tel" placeholder="+7 ( - - - ) - - - - - - -" class="form__input phone__mask">
              </div>
              <div class="form__elem">
                <img src="assets/img/main_img/mail_cont.svg" class="form__icon" alt="Mail">
-               <input type="text" name="mail" placeholder="redcolor@gmail.com" id="mail" class="form__input">
+               <input type="text" name="mail" placeholder="redcolor@gmail.com" class="form__input">
              </div>
              <div class="form__elem">
-               <input type="text" name="town" placeholder="Город обращения" id="town" class="form__input">
+               <input type="text" name="town" placeholder="Город обращения" class="form__input">
              </div>
-             <button type="submit" name="submit" class="btn-submit is-disabled" id="submit">отправить</button>
+             <button type="submit" name="submit" class="btn-submit is-disabled">отправить</button>
            </form>
          </div>
        </section>
 
        <footer class="footer">
-          <div class="footer__wrapper">
+          <div class="footer__content">
            <div class="footer-logo">
              <a href="#">
                <img src="assets/img/main_img/logo_footer.svg" alt="Logo"/>
@@ -370,19 +377,17 @@
            </div>
            <div class="footer__inf">
              <div class="footer-inf__top-line">
-               <div class="footer-inf__wrapper">
-                 <div class="footer-nav">
+               <div class="footer-nav">
                    <ul class="footer-nav__menu">
                      <li class="footer-nav__item"><a href="#" class="footer-nav__link">главная</a></li>
                      <li class="footer-nav__item"><a href="#" class="footer-nav__link">виды страхования</a></li>
                      <li class="footer-nav__item"><a href="#" class="footer-nav__link">новости</a></li>
                      <li class="footer-nav__item"><a href="#" class="footer-nav__link">контакты</a></li>
+                     <li class="footer-nav__item footer-inf__tel">
+                       <img src="assets/img/main_img/phone_footer.svg" class="footer-inf__tel-icon" alt="Phone">
+                       <a href="tel:+74955555555" class="footer-inf__tel-link">+7 (495) 555-55-55</a>
+                     </li>
                    </ul>
-                 </div>
-                 <div class="footer-inf__tel">
-                   <img src="assets/img/main_img/phone_footer.svg" class="footer-inf__tel-icon" alt="Phone">
-                   <a href="tel:+74955555555" class="footer-inf__tel-link">+7 (495) 555-55-55</a>
-                 </div>
                </div>
                <div class="footer-inf__soc-network">
                  <a href="#" class="soc-network__elem">
@@ -440,12 +445,12 @@
                    <a href="#" class="menu__link">Виды страхования</a>
                    <div class="dropdown-list">
                      <ul class="insurance-types__menu">
-                       <li class="insurance-types__item"><a href="#" class="insurance-types__link">автомобили</a></li>
-                       <li class="insurance-types__item"><a href="#" class="insurance-types__link">недвижимость</a></li>
-                       <li class="insurance-types__item"><a href="#" class="insurance-types__link">жизнь и здоровье</a></li>
-                       <li class="insurance-types__item"><a href="#" class="insurance-types__link">путешествия и отдых</a></li>
-                       <li class="insurance-types__item"><a href="#" class="insurance-types__link">предметы роскоши</a></li>
-                       <li class="insurance-types__item"><a href="#" class="insurance-types__link">инвестиции</a></li>
+                       <li class="insurance-types__item mobile-item"><a href="#" class="insurance-types__link">автомобили</a></li>
+                       <li class="insurance-types__item mobile-item"><a href="#" class="insurance-types__link">недвижимость</a></li>
+                       <li class="insurance-types__item mobile-item"><a href="#" class="insurance-types__link">жизнь и здоровье</a></li>
+                       <li class="insurance-types__item mobile-item"><a href="#" class="insurance-types__link">путешествия и отдых</a></li>
+                       <li class="insurance-types__item mobile-item"><a href="#" class="insurance-types__link">предметы роскоши</a></li>
+                       <li class="insurance-types__item mobile-item"><a href="#" class="insurance-types__link">инвестиции</a></li>
                      </ul>
                    </div>
                  </li>
@@ -501,23 +506,23 @@
        <h2 class="form-section__title">Обратный звонок</h2>
        <form class="form form_callback">
          <div class="form__elem">
-           <input type="text" name="name" placeholder="ФИО" id="name" class="form__input">
+           <input type="text" name="name" placeholder="ФИО" class="form__input">
          </div>
          <div class="form__elem">
-           <input type="text" name="question" placeholder="Вопрос" id="question" class="form__input">
+           <input type="text" name="question" placeholder="Вопрос" class="form__input">
          </div>
          <div class="form__elem">
            <img src="assets/img/main_img/phone_cont.svg" class="form__icon" alt="Phone">
-           <input type="text" name="tel" placeholder="+7 ( - - - ) - - - - - - -" id="tel" class="form__input">
+           <input type="text" name="tel" placeholder="+7 ( - - - ) - - - - - - -" class="form__input phone__mask">
          </div>
          <div class="form__elem">
            <img src="assets/img/main_img/mail_cont.svg" class="form__icon" alt="Mail">
-           <input type="text" name="mail" placeholder="redcolor@gmail.com" id="mail" class="form__input">
+           <input type="text" name="mail" placeholder="redcolor@gmail.com" class="form__input">
          </div>
          <div class="form__elem">
-           <input type="text" name="town" placeholder="Город обращения" id="town" class="form__input">
+           <input type="text" name="town" placeholder="Город обращения" class="form__input">
          </div>
-         <button type="submit" name="submit" class="btn-submit is-disabled" id="submit">отправить</button>
+         <button type="submit" name="submit" class="btn-submit is-disabled">отправить</button>
        </form>
      </div>
 
