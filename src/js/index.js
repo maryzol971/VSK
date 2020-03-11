@@ -1,7 +1,6 @@
 import owlCarouse from 'owl.carousel';
 import inputMask from 'inputmask';
 
-
 //  Counter sliderMain
 const updateSliderCountMain = ({item, relatedTarget}) => {
   const indexInLoop = (relatedTarget._clones.length / 2);
@@ -130,8 +129,9 @@ $('.menu-toggle').on('click', function(){
 const phoneSelectors = document.querySelectorAll('.phone__mask');
 const im = new Inputmask("+7 (999) 999-99-99");
 
-phoneSelectors.forEach(phone => {
-  im.mask(phone);
-});
+for(let i = 0; i < phoneSelectors.length; i++){
+  im.mask(phoneSelectors[i]);
+}
+
 
 

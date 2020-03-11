@@ -238,6 +238,7 @@
   }
 
   .header {
+    height: 125px;
     justify-content: center;
     padding-top: 65px;
 
@@ -246,7 +247,7 @@
     }
 
     &-logo {
-      margin-right: 0;
+      display: none;
     }
 
     .menu-right {
@@ -254,8 +255,14 @@
     }
   }
 
+  .header-logo__mobil {
+    display: block;
+  }
+
   .invitation {
     padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,6 +272,7 @@
     justify-content: center;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 20px;
     width: 100%;
     position: relative;
 
@@ -276,10 +284,11 @@
         .advantage__top-line {
           flex-direction: column;
           align-items: center;
+          margin-bottom: 5px;
 
           .advantage__icon {
             margin-right: 0;
-            margin-bottom: 10px;
+            margin-bottom: 0;
           }
 
           .advantage__title {
@@ -294,6 +303,13 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          .advantage__text {
+
+            &:first-child {
+              margin-bottom: 0;
+            }
+          }
         }
       }
     }
@@ -330,7 +346,7 @@
       display: block;
 
       .company-description__text {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
       }
 
       .company-description__text br {
@@ -435,7 +451,7 @@
         }
 
         .more-details {
-          width: 80%;
+          width: 92%;
           padding: 10px 60px 10px 15px;
           border: 1px solid #222222;
           margin-bottom: 72px;
@@ -514,7 +530,7 @@
 
     .btn-submit {
       margin-top: 30px;
-      padding: 0 20%;
+      padding: 0 30%;
     }
   }
 
@@ -603,7 +619,7 @@
 
   .dropdown-menu {
      padding: 20px 7.5% 50px;
-    height: 1130px;
+     height: 100%;
 
     &__wrapper {
 
@@ -613,8 +629,12 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        padding-top: 75px;
-        margin-bottom: 60px;
+        padding-top: 55px;
+        margin-bottom: 55px;
+
+        //.menu-logo {
+        //  display: none;
+        //}
 
         .menu-toggle {
           position: absolute;
@@ -631,7 +651,8 @@
       .dropdown-menu__contacts-line {
         flex-direction: column;
         align-items: center;
-        top: 70%;
+        top: auto;
+        position: static;
 
         .dropdown-menu__contacts-wrapper {
           display: flex;
@@ -655,6 +676,15 @@
 
   .insurance-types__menu {
     padding-left: 0;
+
+    .insurance-types__item {
+      margin-bottom: 12px;
+
+      .insurance-types__link {
+        line-height: 20px;
+        color: #F2F2F2;
+      }
+    }
 
     //.mobile-item {
     //  padding-left: 105px;
