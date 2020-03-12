@@ -39,7 +39,7 @@ $('#sliderAdvantage').owlCarousel({
     0: {
       items: 1,
       loop: true,
-      dots: true,
+      dots: false,
       dotData: true,
       dotsContainer: '.advantage-dots',
       nav: false,

@@ -255,7 +255,7 @@
     }
   }
 
-  .header-logo__mobil {
+  .header-logo__mobile {
     display: block;
   }
 
@@ -691,11 +691,15 @@
     //}
   }
 
+  .dropdown-menu_visible {
+    overflow-y: auto;
+  }
+
 
   .callback-form {
     width: 100%;
-    height: 540px;
-    padding: 15px 7.5% 70px;
+    height: 100%;
+    padding: 15px 7.5% 64px;
 
     &__top-line {
       margin-bottom: 35px;
@@ -706,6 +710,10 @@
       margin-bottom: 30px;
       width: 60%;
     }
+  }
+
+  .callback-form_visible {
+    overflow-y: auto;
   }
 
 
