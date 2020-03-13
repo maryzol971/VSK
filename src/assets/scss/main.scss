@@ -215,7 +215,7 @@ section,
   }
 }
 
-.header-logo__mobil {
+.header-logo__mobile {
   display: none;
 }
 
@@ -256,55 +256,54 @@ section,
   display: flex;
   justify-content: space-between;
   padding-left: 0.8%;
-  //padding-right: 1.5%;
+  padding-right: 1.5%;
 
-  .advantage__item-wrapper {
-    display: flex;
-    justify-content: center;
+  &__item {
 
-    .advantage__item {
+    .advantage__top-line {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
 
-      .advantage__top-line {
-        display: flex;
-        align-items: center;
-        margin-bottom: 16px;
-
-        .advantage__icon {
-          margin-right: 26px;
-        }
-
-        .advantage__title {
-          line-height: 164%;
-          color: #DBC493;
-          position: relative;
-
-          &:before {
-            content: '';
-            position: absolute;
-            left: -15px;
-            top:-3px;
-            width: 1px;
-            height:32px;
-            background:#DBC493;
-            transform:rotate(15deg);
-          }
-        }
+      .advantage__icon {
+        margin-right: 26px;
       }
 
-      .advantage__description {
+      .advantage__title {
+        line-height: 164%;
+        color: #DBC493;
+        position: relative;
 
-        .advantage__text {
-          line-height: 112.5%;
-          color: #FFFFFF;
-          text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
+        &:before {
+          content: '';
+          position: absolute;
+          left: -15px;
+          top:-3px;
+          width: 1px;
+          height:32px;
+          background:#DBC493;
+          transform:rotate(15deg);
+        }
+      }
+    }
 
-          &:first-child {
-            margin-bottom: 5px;
-          }
+    .advantage__description {
+
+      .advantage__text {
+        line-height: 112.5%;
+        color: #FFFFFF;
+        text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
+
+        &:first-child {
+          margin-bottom: 5px;
         }
       }
     }
   }
+}
+
+.slider-advantage {
+  display: none;
 }
 
 .advantage-dots {
@@ -340,8 +339,9 @@ section,
 }
 
 .about-company-block {
-  padding-top: 70px;
-  padding-right: 4.9%;
+  //padding-top: 70px;
+  //padding-right: 4.9%;
+  padding: 70px 4% 46px;
 
   .company__top-line {
     display: flex;
@@ -374,7 +374,7 @@ section,
 
   .insurance-types {
     padding-left: 80px;
-    padding-bottom: 46px;
+    //padding-bottom: 46px;
     color: #222222;
   }
 }
