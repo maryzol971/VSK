@@ -10,15 +10,15 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
+  //@media screen and (max-width: $desktopWidth) {
+  //  font-size: 16px;
+  //}
+  //@media screen and (max-width: $tableWidth) {
+  //  font-size: 15px;
+  //}
+  //@media screen and (max-width: $phoneWidth) {
+  //  font-size: 14px;
+  //}
 }
 
 body {
@@ -105,12 +105,43 @@ section,
 }
 
 //--------------------------------------------
+
+.invitation__text {
+  font-size: 80px;
+}
+
+.about-company__title, {
+  font-size: 38px;
+}
+
+.slider__text,
+.contacts-section__title,
+.form-section__title,
+.menu__link,
+.callback-form__title {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-size: 38px;
+  line-height: 0.86;
+  color: #FFFFFF;
+}
+
 .advantage__text,
 .news-block__title,
 .insurance-types__link {
   font-size: 24px;
 }
 
+.company-description__text,
+.news__anons,
+.contacts-section__tel,
+.form__input,
+.footer-insurance__link,
+.slider-main__counter,
+.slider-news__counter {
+  font-size: 16px;
+}
+
+.header-nav__link,
 .advantage__title,
 .contacts-section__mail {
   font-size: 12px;
@@ -127,12 +158,8 @@ section,
 .footer-inf__tel-link {
   font-family: "Ubuntu Condensed", sans-serif;
   font-size: 12px;
-  line-height: 164%;
+  line-height: 1.64;
   text-transform: uppercase;
-}
-
-.about-company__title, {
-  font-size: 38px;
 }
 
 .advantage__title,
@@ -142,26 +169,6 @@ section,
   text-transform: uppercase;
 }
 
-.slider__text,
-.contacts-section__title,
-.form-section__title,
-.menu__link,
-.callback-form__title {
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 38px;
-  line-height: 86%;
-  color: #FFFFFF;
-}
-
-.company-description__text,
-.news__anons,
-.contacts-section__tel,
-.form__input,
-.footer-insurance__link,
-.slider-main__counter,
-.slider-news__counter {
-  font-size: 16px;
-}
 
 .main-block {
   max-width: 100%;
@@ -180,11 +187,10 @@ section,
 
 .header {
   width: 100%;
-  height: 140px;
+  height: 16vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
 
   &-nav {
 
@@ -199,8 +205,7 @@ section,
         }
 
         .header-nav__link {
-          font-size: 12px;
-          line-height: 164%;
+          line-height: 1.64;
           text-transform: uppercase;
           color: #FFFFFF;
           border-bottom: 1px solid #FFFFFF;
@@ -244,8 +249,7 @@ section,
     font-family: "Marianna", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 80px;
-    line-height: 77%;
+    line-height: 0.77;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-shadow: 0 0 10px rgba(17, 18, 19, 0.2);
@@ -270,7 +274,7 @@ section,
       }
 
       .advantage__title {
-        line-height: 164%;
+        line-height: 1.64;
         color: #DBC493;
         position: relative;
 
@@ -290,7 +294,7 @@ section,
     .advantage__description {
 
       .advantage__text {
-        line-height: 112.5%;
+        line-height: 1.125;
         color: #FFFFFF;
         text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
 
@@ -339,9 +343,7 @@ section,
 }
 
 .about-company-block {
-  //padding-top: 70px;
-  //padding-right: 4.9%;
-  padding: 70px 4% 46px;
+  padding: 70px 4.9% 46px;
 
   .company__top-line {
     display: flex;
@@ -350,7 +352,7 @@ section,
 
   .about-company__title {
     padding-left: 11.3%;
-    line-height: 109%;
+    line-height: 1.09;
     color: #222222;
   }
 
@@ -365,7 +367,7 @@ section,
       }
 
       .company-description__text {
-        line-height: 159%;
+        line-height: 1.59;
         color: #222222;
         margin-bottom: 36px;
       }
@@ -374,7 +376,6 @@ section,
 
   .insurance-types {
     padding-left: 80px;
-    //padding-bottom: 46px;
     color: #222222;
   }
 }
@@ -420,7 +421,7 @@ section,
       width: 100%;
 
       .slider-block__item-wrapper {
-        padding-top: 195%;
+        padding-top: 195%;            // height 700px от width 360px
         position: relative;
         top: 0;
         bottom: 0;
@@ -616,7 +617,7 @@ section,
 
 .contacts-block {
   width: 100%;
-  height:700px ;
+  height: 700px ;
   background: #16345F;
 }
 
@@ -648,7 +649,7 @@ section,
     }
 
     .contacts-section__tel {
-      line-height: 159%;
+      line-height: 1.59;
       color: #FFFFFF;
     }
 
@@ -766,7 +767,7 @@ section,
 
         .footer-insurance__link {
           margin-right: 27px;
-          line-height: 160%;
+          line-height: 1.6;
           color: #16345F;
           border-bottom: 1px solid #16345F;
 
@@ -794,8 +795,7 @@ section,
   background-color: #16345F;
   position: fixed;
   top: 0;
-  //left: -99999px;
-  left: 0;
+  left: -99999px;
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity .5s ease, transform 0s ease .5s;
@@ -844,7 +844,7 @@ section,
       position: fixed;
       left: 5.5%;
       right: 5.5%;
-      top: 85%;
+      top: 75%;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -873,7 +873,6 @@ section,
           }
         }
       }
-
     }
   }
 }
@@ -899,12 +898,13 @@ section,
         width: 60px;
         height: 2px;
         background-color: #BDBDBD;
-        display: none;
-        transition: all .4s ease;
+        opacity: 0;
+        //transition: all .4s ease;
+        transition: background 2s ease 1.5s;
       }
 
       &:hover::before {
-        display: block;
+        opacity: 1;
       }
 
       .insurance-types__link {
@@ -914,7 +914,6 @@ section,
       }
     }
   }
-
 
 
 .callback-form {

@@ -21,10 +21,10 @@ $('#sliderMain').owlCarousel({
     0:{
       items:1
     },
-    550:{
+    521:{
       items:2
     },
-    960:{
+    768:{
       items:3
     },
     1280:{
@@ -81,7 +81,7 @@ $('#sliderNews').owlCarousel({
       nav: true,
       margin: 48,
     },
-    1024: {
+    960: {
       items: 4,
       dots: false,
       mouseDrag: false,
@@ -110,17 +110,48 @@ $('.form-toggle').on('click', function(e){
 
 
 //menu height
-$('.dropdown-list').slideUp(0);
+//$('.dropdown-list').slideUp(0);
 
 $('.menu__item_insurance').on('mouseenter', function(){
    $('.dropdown-list').slideDown(500);
    console.log('open');
 });
 
+// Resize observer
+const resizeConfig = {
+  isMobile: 960
+};
+
+const toggleMenuOpen = isMobile => {
+
+  if(isMobile){
+    $('.dropdown-list').slideDown(0);
+  } else {
+    $('.dropdown-list').slideUp(0);
+  }
+};
+
+let isMobile = window.innerWidth < resizeConfig.isMobile;
+
+toggleMenuOpen(isMobile);
+
+// $(window).on('resize', function() {
+//   let isUpdatedMobile = window.innerWidth < resizeConfig.isMobile;
+//
+//   if(isUpdatedMobile !== isMobile){
+//     isMobile = isUpdatedMobile;
+//     $(document).trigger('deviceSwitch');
+//   }
+// });
+//
+// $(document).on('deviceSwitch', function () {
+//   toggleMenuOpen(isMobile);
+// });
+
 $('.menu-toggle').on('click', function(){
-  $('.dropdown-list').slideUp(500);
-  console.log('close');
+  toggleMenuOpen(isMobile);
 });
+
 
 // $('.menu__item_insurance').on('mouseleave', function(){
 //   $('.slide-list').slideUp(500);
