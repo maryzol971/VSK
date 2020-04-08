@@ -110,7 +110,7 @@ section,
   font-size: 80px;
 }
 
-.about-company__title, {
+.about-company__title {
   font-size: 38px;
 }
 
@@ -148,6 +148,7 @@ section,
 }
 
 .menu-right__menu,
+.menu-fixed__menu,
 .insurance-types,
 .slider__number,
 .slider__link,
@@ -189,7 +190,6 @@ section,
   width: 100%;
   height: 16vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   &-nav {
@@ -199,6 +199,7 @@ section,
 
       .header-nav__item {
         margin-right: 32px;
+        white-space: nowrap;
 
         &:last-child {
           margin-right: 0;
@@ -216,29 +217,13 @@ section,
   }
 
   .header-logo {
-    margin-right: 17%;
+    margin-left: 19.3%;
+    width: 100%;
   }
 }
 
 .header-logo__mobile {
   display: none;
-}
-
-.menu-right {
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &__menu_white {
-    color: #FFFFFF;
-  }
-
-  &__burger {
-    margin-left: 26px;
-  }
 }
 
 .invitation {
@@ -329,8 +314,8 @@ section,
     background-color: transparent;
     padding: 0 7px;
     cursor: pointer;
-    -moz-osx-font-smoothing: unset;
-    -webkit-font-smoothing: unset;
+    -moz-osx-font-smoothing: unset;  //не нвдо
+    -webkit-font-smoothing: unset;    //не нвдо
 
     transition: color .3s ease .1s, font-size .3s ease .1s;
 
@@ -343,12 +328,7 @@ section,
 }
 
 .about-company-block {
-  padding: 70px 4.9% 46px;
-
-  .company__top-line {
-    display: flex;
-    justify-content: flex-end;
-  }
+  padding: 95px 4.9% 46px;
 
   .about-company__title {
     padding-left: 11.3%;
@@ -417,8 +397,23 @@ section,
       }
     }
 
-    &__item-container{
+    .slider-block__item-container {
       width: 100%;
+      transition: all .3s ease;   //!!!   //Увеличение слайдера
+
+      &:hover {
+        transform: scale(1.05);    //!!!    //Увеличение слайдера
+
+        .slider-block__item {
+          padding-top: 28.57%;      //!!!    //Уменьшение элементов
+          padding-left: 10.47%;      //!!!    //Уменьшение элементов
+        }
+
+        .slider__top-line,
+        .slider__benefits {
+          transform: scale(.95);     //!!!    //Уменьшение элементов
+        }
+      }
 
       .slider-block__item-wrapper {
         padding-top: 195%;            // height 700px от width 360px
@@ -438,8 +433,8 @@ section,
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-          padding-top: 30%;     //110px
-          padding-left: 11%;   //40px
+          padding-top: 30%;
+          padding-left: 11%;
 
           &:before {
             content: "";
@@ -458,6 +453,7 @@ section,
             .slider__top-line {
               display: flex;
               padding-bottom: 40px;
+              transition: all .6s ease;     //!!!
 
               .slider__number {
                 color: #DBC493;
@@ -482,6 +478,7 @@ section,
             }
 
             .slider__benefits {
+              transition: all .6s ease;       //!!!
 
               .slider__text {
                 text-shadow: 0 0 10px rgba(8, 59, 87, 0.4);
@@ -494,7 +491,7 @@ section,
                   height: 3px;
                   background-color: #FFFFFF;
                   position: absolute;
-                  left: 41.5%;      //133px от 360-40
+                  left: 41.5%;
                   top: 55%;
                 }
               }
@@ -552,15 +549,10 @@ section,
     align-items: center;
   }
 
-  &__top-line {
-    display: flex;
-    justify-content: space-between;
+  .news-block__title {
+    line-height: 86%;
+    color: #828282;
     padding-bottom: 60px;
-
-    .news-block__title {
-      line-height: 86%;
-      color: #828282;
-    }
   }
 
   .news {
@@ -579,9 +571,8 @@ section,
     .news__item {
       margin-bottom: 40px;
 
-      &:first-child,           //?
-      &:nth-child(2) {         //?
-        margin-right: 15.1%;     //?
+      &:nth-child(odd) {
+        margin-right: 15.1%;
       }
 
       .news__date {
@@ -750,17 +741,17 @@ section,
           }
         }
 
-         .footer-inf__soc-network {
+        .footer-inf__soc-network {
 
-           .soc-network__elem {
-             margin-right: 14px;
+          .soc-network__elem {
+            margin-right: 14px;
 
-             &:last-child {
-               margin-right: 0;
-             }
-           }
-         }
-      }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+    }
 
       .footer-inf__insurance {
         display: flex;
@@ -787,6 +778,69 @@ section,
   }
 }
 
+.menu-right {
+  position: fixed;
+  right: 5.6%;   //80px
+  top: 6.8vh;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__burger {
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/img/main_img/burger_black.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 26px;
+  }
+}
+
+.menu-right_white {
+  transition: all .3s ease;
+
+  .menu-right__menu {
+    color: #FFFFFF;
+  }
+
+  .menu-right__burger {
+    background-image: url(/assets/img/main_img/burger_white.svg);
+  }
+}
+
+.menu-fixed {
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  min-height: 40px;
+  top: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(21, 10, 8, 0.25);
+  padding-right: 5.5%;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__burger {
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/img/main_img/burger_black.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 3.3%;
+  }
+}
+
 .dropdown-menu {
   max-width: 100%;
   width: 100%;
@@ -802,7 +856,7 @@ section,
   z-index: 11;
 
   &__wrapper {
-     position: relative;
+    position: relative;
 
     .dropdown-menu__top-line {
       width: 100%;
@@ -911,13 +965,17 @@ section,
         line-height: 1.6;
         text-transform: uppercase;
         color: #BDBDBD;
+
+        &:hover {
+          color: #FFFFFF;
+        }
       }
     }
   }
 
 
 .callback-form {
-  width: 45.5%;   //656px
+  width: 45.5%;
   height: 100vh;
   background-color: #16345F;
   padding: 8.5vh 3.8% 25vh 3.8% ;
@@ -951,11 +1009,9 @@ section,
 }
 
 
-
-
 .callback-sign {
   position: fixed;
-  right: 4.5%;   //65px
+  right: 4.5%;          //65px
   bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -993,9 +1049,6 @@ section,
   }
 }
 
-.menu-fixed {
-  display: none;
-}
 
 
 
