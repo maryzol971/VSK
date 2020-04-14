@@ -1,19 +1,23 @@
 @media screen and (max-width: 1280px) {
+
+  .invitation__text {
+    font-size: 70px;
+  }
+
   .about-company__title,
   .slider__text,
   .contacts-section__title,
   .form-section__title,
   .menu__link,
   .callback-form__title {
-    font-size: 32px;
+    font-size: 36px;
   }
 
-  .invitation__text {
-    font-size: 70px;
+  .news-block__title {
+    font-size: 22px;
   }
 
   .advantage__text,
-  .news-block__title,
   .insurance-types__link {
     font-size: 20px;
   }
@@ -25,149 +29,263 @@
   .footer-insurance__link {
     font-size: 14px;
   }
+
+  .news__date,
+  .more-details__link {
+    font-size: 12px;
+  }
+
 }
 
 
-//@media screen and (max-width:1024px) {
-//  .advantage {
-//    display: flex;
-//    flex-wrap: wrap;
-//    justify-content: center;
-//    padding: 0;
-//
-//    &__item {
-//      margin-bottom: 25px;
-//      margin-right: 10%;
-//
-//      &:nth-child(3),
-//      &:last-child {
-//        margin-right: 0;
-//      }
-//
-//      .advantage__top-line {
-//        margin-bottom: 10px;
-//      }
-//    }
-//  }
-//
-//  .about-company-block {
-//
-//    .company__description {
-//      padding-bottom: 70px;
-//    }
-//
-//    .insurance-types {
-//      padding-bottom: 0;
-//    }
-//  }
-//
-//
-//  .news-block {
-//    padding-top: 70px;
-//    padding-bottom: 150px;
-//
-//    .news-block__top-line {
-//      padding-bottom: 40px;
-//    }
-//
-//    .news {
-//
-//      .news__column {
-//
-//        &:first-child {
-//          margin-right: 7%;
-//        }
-//
-//        .news__item {
-//          margin-bottom: 30px;
-//
-//          .news__date {
-//            margin-bottom: 10px;
-//          }
-//
-//          .news__anons {
-//            margin-bottom: 15px;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
+@media screen and (max-width: 1200px) {
 
-//@media screen and (max-width:960px) {
-//
-//  .about-company__title,
-//  .slider__text,
-//  .contacts-section__title,
-//  .form-section__title,
-//  .menu__link,
-//  .callback-form__title {
-//    font-size: 28px;
-//  }
-//
-//  .invitation__text {
-//    font-size: 60px;
-//  }
-//
-//  .advantage__text,
-//  .news-block__title,
-//  .insurance-types__link {
-//    font-size: 18px;
-//  }
-//
-//  .menu-right__menu,
-//  .more-details__link,
-//  .news__date,
-//  .btn-submit,
-//  .footer-nav__link,
-//  .footer-inf__tel-link {
-//    font-size: 10px;
-//  }
-//
-//  .header {
-//    padding-top: 20px;
-//  }
-//
-//  .about-company-block {
-//    padding-top: 70px;
-//    padding-left: 4.9%;
-//
-//    .about-company__title {
-//      padding-left: 0;
-//    }
-//
-//    .company__description {
-//      padding: 40px 6% 70px 6%;
-//      justify-content: space-between;
-//
-//      .company-description__column {
-//
-//        &:first-child {
-//          margin-right: 0;
-//        }
-//      }
-//    }
-//
-//    .insurance-types {
-//      padding-left: 0;
-//    }
-//  }
-//
-//  .news-block {
-//    padding-left: 4.9%;
-//
-//    .news {
-//      padding-left: 6%;
-//      padding-right: 6%;
-//      justify-content: space-between;
-//      margin-right: 0;
-//    }
-//  }
-//
-//}
+  .invitation__text {
+    font-size: 60px;
+  }
+
+  .about-company__title,
+  .slider__text,
+  .contacts-section__title,
+  .form-section__title,
+  .menu__link,
+  .callback-form__title {
+    font-size: 34px;
+  }
+
+  .news-block__title {
+    font-size: 20px;
+  }
+
+  .insurance-types__link {
+    font-size: 18px;
+  }
+
+  .advantage__text {
+    font-size: 14px;
+  }
+
+  .footer-insurance__link {
+    font-size: 13px;
+  }
+
+  .company-description__text,
+  .news__anons {
+    font-size: 12px;
+  }
+
+  .menu-right__menu,
+  .header-nav__link,
+  .btn-submit {
+    font-size: 11px;
+  }
+
+  .advantage__title,
+  .news__date,
+  .more-details__link,
+  .footer-nav__link,
+  .footer-inf__tel-link {
+     font-size: 10px;
+  }
+
+  .main-block {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .header {
+
+    &-nav {
+
+      .header-nav__menu {
+
+        .header-nav__item {
+          margin-right: 18px;
+        }
+      }
+    }
+
+    .header-logo {
+      margin-left: 18%;
+    }
+  }
+
+  .invitation {
+    padding-top: 100px;     // Закоментировать для разворота
+    //padding-top: 160px;   // Разкоментировать для разворота
+  }
+
+  //  Разкоментировать для разворота
+  //.advantage {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  justify-content: center;
+  //  padding: 0;
+  //  margin-top: 30px;
+  //
+  //  &__item {
+  //    margin-bottom: 30px;
+  //    margin-right: 16%;
+  //
+  //    &:nth-child(3),
+  //    &:last-child {
+  //      margin-right: 0;
+  //    }
+  //
+  //    &:nth-child(4),
+  //    &:last-child {
+  //      margin-bottom: 0;
+  //    }
+  //
+  //    .advantage__top-line {
+  //      margin-bottom: 10px;
+  //    }
+  //  }
+  //}
+
+  .about-company-block {
+    padding: 50px 4% 32px;
+
+    .about-company__title {
+      padding-left: 7%;
+    }
+
+    .company__description {
+      padding: 40px 0 60px 9%;
+
+      .company-description__column {
+
+        &:first-child {
+          margin-right: 8%;
+        }
+
+        .company-description__text {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    .insurance-types {
+      padding-left: 32px;
+    }
+  }
+
+  .news-block {
+    padding: 80px 4% 140px 10.5%;
+
+    .news-block__top-line {
+      padding-bottom: 40px;
+    }
+
+    .news {
+
+      .news__item {
+        margin-bottom: 30px;
+
+        &:nth-child(odd) {
+          margin-right: 13%;
+        }
+      }
+    }
+  }
+
+  .contacts-section {
+    width: 46.5%;
+    left: 4%;
+    top: -13%;
+  }
+
+  .form-section {
+    width: 42.9%;
+    top: 14%;
+  }
+
+  .footer {
+    padding: 160px 4% 120px;
+
+    .footer__content {
+
+      .footer__inf {
+
+        .footer-inf__top-line {
+
+          .footer-nav {
+
+            .footer-nav__menu {
+
+              .footer-inf__tel {
+               margin-right: 30px;
+
+                &-link {
+                  margin-left: 12px;
+                }
+              }
+            }
+          }
+
+          .footer-inf__soc-network {
+
+            .soc-network__elem {
+              margin-right: 12px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        .footer-inf__insurance {
+
+          .footer-insurance__link {
+            margin-right: 20px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-inf__tel {
+    margin: 0 30px;
+
+    &-link {
+      margin-left: 12px;
+    }
+  }
+
+  .menu-right {
+    right: 3.4%;   //40px
+  }
+
+  .dropdown-menu {
+
+    .dropdown-menu__wrapper {
+
+      .dropdown-menu__contacts-line {
+        top: 80%;
+      }
+    }
+  }
+
+  .callback-form {
+
+    .callback-form__top-line {
+      margin-bottom: 70px;
+    }
+  }
+
+  .callback-sign {
+    right: 2.6%;
+  }
+
+}
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 959px) {
 
   .invitation__text,
   .slider__text,
@@ -215,29 +333,9 @@
     font-size: 12px;
   }
 
-  .menu-fixed {
-    max-width: 100%;
-    width: 100%;
-    min-height: 40px;
-    background: #FFFFFF;
-    box-shadow: 0 0 4px rgba(21, 10, 8, 0.25);
-    padding-right: 4.7%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .menu-right {
-
-    &__burger {
-      margin-left: 10px;
-    }
-  }
 
   .header {
+    height: 125px;
     justify-content: center;
     padding-top: 65px;
 
@@ -246,54 +344,71 @@
     }
 
     &-logo {
-      margin-right: 0;
-    }
-
-    .menu-right {
       display: none;
     }
   }
 
+  .header-logo__mobile {
+    display: block;
+  }
+
   .invitation {
     padding-left: 0;
+    padding-top: 0;
+    margin-bottom: -55px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .advantage {
+    display: none;
+  }
+
+  .slider-advantage {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
     padding-left: 0;
     padding-right: 0;
-    width: 100%;
+    margin-bottom: 35px;
     position: relative;
 
-    .advantage__item-wrapper {
+    .advantage__item {
+      margin-bottom: 0;           //!!!    Убрать, если не нужен вариант с розворотом
+      margin-right: 0;
+      padding-left: 2.5%;
 
-      .advantage__item {
-        margin-right: 0;
+      .advantage__top-line {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
 
-        .advantage__top-line {
-          flex-direction: column;
-          align-items: center;
-
-          .advantage__icon {
-            margin-right: 0;
-            margin-bottom: 10px;
-          }
-
-          .advantage__title {
-
-            &:before {
-              display: none;
-            }
-          }
+        .advantage__icon {
+          margin-right: 0;
+          margin-bottom: 8px;
         }
 
-        .advantage__description {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        .advantage__title {
+          margin-bottom: 8px;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      .advantage__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .advantage__text {
+
+          &:first-child {
+            margin-bottom: 5px;
+          }
         }
       }
     }
@@ -301,11 +416,6 @@
     .owl-next {
       display: none;
     }
-  }
-
-  .slider-advantage {
-    width: 100%;
-    overflow: hidden;
   }
 
   .advantage-dots {
@@ -321,7 +431,7 @@
     }
 
     .about-company__title {
-      padding-left: 0;      //есть выше
+      padding-left: 0;
       width: 66%;
     }
 
@@ -330,7 +440,7 @@
       display: block;
 
       .company-description__text {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
       }
 
       .company-description__text br {
@@ -340,46 +450,7 @@
 
     .insurance-types {
       padding-left: 0;
-      padding-bottom: 0;
     }
-  }
-
-  .slider-main__wrapper-block {
-
-    .slider-main__counter {
-      display: flex;
-    }
-
-    .slider-block {
-
-      .owl-nav {
-        width: 50%;
-        justify-content: flex-end;
-        padding: 0 7.5%;
-      }
-
-      .slider-block__item-container {
-
-        .slider-block__item-wrapper {
-          padding-top: 150%;
-
-          .slider-block__item {
-            padding: 40px 7.5% 0;
-
-            .slider__item-container {
-
-              .slider__top-line {
-                padding-bottom: 20px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .owl-prev {
-    display: none;
   }
 
 
@@ -392,10 +463,6 @@
 
     &__top-line {
       padding-bottom: 80px;
-
-      .menu-right {
-        display: none;
-      }
     }
 
     .news {
@@ -424,7 +491,6 @@
 
       .news__item {
         margin-bottom: 40px;
-        margin-right: 48px;
 
         .news__date {
           margin-bottom: 5px;
@@ -435,7 +501,7 @@
         }
 
         .more-details {
-          width: 80%;
+          width: 92%;
           padding: 10px 60px 10px 15px;
           border: 1px solid #222222;
           margin-bottom: 72px;
@@ -514,7 +580,7 @@
 
     .btn-submit {
       margin-top: 30px;
-      padding: 0 20%;
+      padding: 0 30%;
     }
   }
 
@@ -545,6 +611,7 @@
             &__menu {
               flex-wrap: wrap;
               justify-content: space-between;
+              padding: 0 30%;
 
               .footer-nav__item {
                 margin-right: 12px;
@@ -555,16 +622,20 @@
                 }
 
                 &:nth-child(4) {
-                  padding-left: 15px;
+                  padding-left: 7%;
+                  line-height: 1.1;
                 }
               }
 
               .footer-inf__tel {
-                margin: 0;
-                padding-right: 15px;
+                margin: 0 0 15px 0!important;
+                padding-right: 7%;
+                display: flex;
+                align-items: center;
 
                 &-link {
                   margin-left: 9px;
+                  white-space: nowrap;
                 }
               }
             }
@@ -575,6 +646,7 @@
             justify-content: space-between;
             margin-bottom: 40px;
             width: 100%;
+            padding: 0 30%;
 
             .soc-network__elem {
               margin-right: 0;
@@ -587,7 +659,7 @@
           align-items: center;
 
           .footer-insurance__link {
-            margin-right: 0;
+            margin-right: 0!important;
             margin-bottom: 15px;
             border: none;
             text-decoration: underline;
@@ -601,9 +673,19 @@
     }
   }
 
+  .menu-right,
+  .menu-right_white {
+    display: none;
+  }
+
+  .menu-fixed {
+    display: flex;
+  }
+
+
   .dropdown-menu {
-     padding: 20px 7.5% 50px;
-    height: 1130px;
+    padding: 20px 7.5% 50px;
+    height: 100%;
 
     &__wrapper {
 
@@ -613,8 +695,8 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        padding-top: 75px;
-        margin-bottom: 60px;
+        padding-top: 55px;
+        margin-bottom: 55px;
 
         .menu-toggle {
           position: absolute;
@@ -631,7 +713,8 @@
       .dropdown-menu__contacts-line {
         flex-direction: column;
         align-items: center;
-        top: 70%;
+        top: auto;
+        position: static;
 
         .dropdown-menu__contacts-wrapper {
           display: flex;
@@ -656,16 +739,43 @@
   .insurance-types__menu {
     padding-left: 0;
 
-    //.mobile-item {
-    //  padding-left: 105px;
-    //}
+    .insurance-types__item {
+      margin-bottom: 12px;
+
+      // Черта для активного пункта меню
+      &::before {
+        left: 0;
+        width: 30px;
+        background-color: #F2F2F2;
+        opacity: 1;                   // Отменяем действие hover в десктопе
+        display: none;
+      }
+
+      .insurance-types__link {
+        line-height: 20px;
+        color: #F2F2F2;
+      }
+    }
+
+    // Для активного пункта меню сдвиг вправо и черта
+    .insurance-types__item.is-active {
+      padding-left: 40px;
+
+      &::before {
+        display: block;
+      }
+    }
+  }
+
+  .dropdown-menu_visible {
+    overflow-y: auto;
   }
 
 
   .callback-form {
     width: 100%;
-    height: 540px;
-    padding: 15px 7.5% 70px;
+    height: 100%;
+    padding: 15px 7.5% 64px;
 
     &__top-line {
       margin-bottom: 35px;
@@ -678,6 +788,9 @@
     }
   }
 
+  .callback-form_visible {
+    overflow-y: auto;
+  }
 
 
   .callback-sign {
@@ -692,4 +805,242 @@
     }
   }
 }
+
+
+@media screen and (max-width: 768px) {
+
+.footer {
+
+  &__content {
+
+    .footer__inf {
+
+      .footer-inf__top-line {
+
+        .footer-nav {
+
+          &__menu {
+            padding: 0 25%;
+
+            .footer-nav__item {
+
+              &:nth-child(4) {
+                padding-left: 5.5%;
+              }
+            }
+
+            .footer-inf__tel {
+              padding-right: 5.5%;
+            }
+          }
+        }
+
+        .footer-inf__soc-network {
+          padding: 0 25%;
+        }
+      }
+    }
+  }
+}
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .footer {
+
+    &__content {
+
+      .footer__inf {
+
+        .footer-inf__top-line {
+
+          .footer-nav {
+
+            &__menu {
+              padding: 0 20%;
+            }
+          }
+
+          .footer-inf__soc-network {
+            padding: 0 20%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .slider-main__wrapper-block {
+
+    .slider-main__counter {
+      display: flex;
+    }
+
+    .slider-block {
+
+      .owl-nav {
+        width: 50%;
+        justify-content: flex-end;
+        padding: 0 7.5%;
+      }
+
+      .slider-block__item-container {
+
+        .slider-block__item-wrapper {
+          padding-top: 150%;
+
+          .slider-block__item {
+            padding: 40px 7.5% 0;
+
+            .slider__item-container {
+
+              .slider__top-line {
+                padding-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .owl-prev {
+    display: none;
+  }
+
+  .footer {
+
+    &__content {
+
+      .footer__inf {
+
+        .footer-inf__top-line {
+
+          .footer-nav {
+
+            &__menu {
+              padding: 0 15%;
+
+              .footer-nav__item {
+
+                &:nth-child(4) {
+                  padding-left: 6%;
+                }
+              }
+
+              .footer-inf__tel {
+                padding-right: 6%;
+              }
+            }
+          }
+
+          .footer-inf__soc-network {
+            padding: 0 15%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:480px) {
+
+  .footer {
+
+    &__content {
+
+      .footer__inf {
+
+        .footer-inf__top-line {
+
+          .footer-nav {
+
+            &__menu {
+              padding: 0 10%;
+            }
+          }
+
+          .footer-inf__soc-network {
+            padding: 0 10%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width:390px) {
+
+  .footer {
+
+    &__content {
+
+      .footer__inf {
+
+        .footer-inf__top-line {
+
+          .footer-nav {
+
+            &__menu {
+              padding: 0;
+            }
+          }
+
+          .footer-inf__soc-network {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .invitation {
+    margin-bottom: 20px;
+  }
+
+  .slider-advantage {
+    margin-bottom: 20px;
+
+    .advantage__item {
+
+      .advantage__top-line {
+
+        .advantage__icon {
+          margin-bottom: 0;
+        }
+
+        .advantage__title {
+          margin-bottom: 8px;
+        }
+      }
+
+      .advantage__description {
+
+        .advantage__text {
+
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
 

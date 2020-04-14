@@ -1,0 +1,68 @@
+/* Mixins:
+   ========================================================================== */
+/* Fonts Helpers:
+   Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
+   ========================================================================== */
+/*
+  By default template support only modern format fonts
+  Without svg. Only: .woff, .woffs
+  if ypu need svg comments lines bellow and uncomments "Fonts helper all format fonts"
+
+  Usage:
+    1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`
+      FOLLOW: Files Required
+      Example: .woff, .woffs formats
+    2. Go to fonts.scss
+    3. Use mixon
+      Example: @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+
+    Required parameters: @family, @family
+    Minor parameters: @weight, @style, @pipeline
+
+    Example Base:
+      @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+    Example Situation:
+      @include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 400, italic);
+*/
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/assets/fonts/Ubuntu-Light/Ubuntu-Light.woff") format("woff"), url("/assets/fonts/Ubuntu-Light/Ubuntu-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Ubuntu-Regular/Ubuntu-Regular.woff") format("woff"), url("/assets/fonts/Ubuntu-Regular/Ubuntu-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/assets/fonts/Ubuntu-Medium/Ubuntu-Medium.woff") format("woff"), url("/assets/fonts/Ubuntu-Medium/Ubuntu-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/Ubuntu-Bold/Ubuntu-Bold.woff") format("woff"), url("/assets/fonts/Ubuntu-Bold/Ubuntu-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Ubuntu Condensed";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Ubuntu-Condensed/UbuntuCondensed-Regular.woff") format("woff"), url("/assets/fonts/Ubuntu-Condensed/UbuntuCondensed-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Marianna";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Marianna/mariannaallfontru.woff") format("woff"), url("/assets/fonts/Marianna/mariannaallfontru.woff2") format("woff2");
+}
+/*# sourceMappingURL=fonts.css.map */
